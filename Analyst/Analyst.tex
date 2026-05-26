@@ -1,0 +1,329 @@
+%=========================================================
+% ATS OPTIMIZED RESUME -- ABHIJITH E
+% Single Column | Standard Headings | No Tables/Graphics
+% Compiler: pdflatex
+%=========================================================
+
+\documentclass[a4paper,10.5pt]{article}
+
+%==================== PACKAGES ====================
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+%==================== ATS ====================
+\pdfgentounicode=1
+\urlstyle{same}
+
+%==================== COLORS ====================
+\definecolor{mainblue}{HTML}{38B6FF}
+\definecolor{textblack}{HTML}{111827}
+\definecolor{lightgray}{HTML}{4B5563}
+\definecolor{MAINBLUE}{HTML}{38B6FF}
+
+%==================== PAGE STYLE ====================
+% No fancy headers/footers -- ATS cannot read them
+\pagestyle{empty}
+
+%==================== MARGINS ====================
+\usepackage[
+  top=0.55in,
+  bottom=0.55in,
+  left=0.65in,
+  right=0.65in
+]{geometry}
+
+%==================== SECTION FORMAT ====================
+\titleformat{\section}
+  {\large\bfseries\color{mainblue}\uppercase}
+  {}{0em}{}[\color{mainblue}\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+%==================== CUSTOM COMMANDS ====================
+
+\newcommand{\resumeEntry}[4]{%
+  \vspace{3pt}%
+  \noindent\textbf{\normalsize #1}\hfill\textcolor{lightgray}{\small #2}\\%
+  \noindent\textit{\small #3}\hfill\textit{\small #4}%
+  \vspace{2pt}%
+}
+
+\newcommand{\resumeProject}[2]{%
+  \vspace{3pt}%
+  \noindent\textbf{\normalsize #1}\hfill\textcolor{lightgray}{\small #2}%
+  \vspace{1pt}%
+}
+
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}%
+}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=3pt, parsep=0pt]%
+}
+
+\newcommand{\resumeItemListEnd}{%
+  \end{itemize}\vspace{2pt}%
+}
+
+%=========================================================
+\begin{document}
+
+%==================== HEADER (in body, NOT in header/footer) ====================
+
+\begin{center}
+
+{\Huge\bfseries\color{textblack} Abhijith E}
+
+\vspace{4pt}
+
+\small
+\makebox[\textwidth][c]{%
+\textcolor{mainblue}{\faIcon{envelope}}\hspace{3pt}
+\href{mailto:20eabhijith@gmail.com}{20eabhijith@gmail.com}
+\hspace{12pt}
+\textcolor{mainblue}{\faIcon{phone}}\hspace{3pt}
++91-9526525765
+\hspace{12pt}
+\textcolor{mainblue}{\faIcon{map-marker-alt}}\hspace{3pt}
+Bengaluru, India
+\hspace{12pt}
+\textcolor{mainblue}{\faIcon{linkedin}}\hspace{3pt}
+\href{https://linkedin.com/in/abhijith-e}{abhijith-e}
+\hspace{12pt}
+\textcolor{mainblue}{\faIcon{github}}\hspace{3pt}
+\href{https://github.com/Abhijith-E}{Abhijith-E}
+}
+
+\end{center}
+
+\vspace{2pt}
+
+%==================== PROFESSIONAL SUMMARY ====================
+
+\section{Professional Summary}
+
+\small{
+AI/ML Analyst with a Master’s degree in Artificial Intelligence \& Machine Learning from CHRIST University, specializing in AI, machine learning, deep learning, computer vision, robotics, and quantum computing. Skilled in developing scalable intelligent systems using Python, TensorFlow, PyTorch, FastAPI, and transformer-based architectures. Research interests include generative AI, multimodal learning, quantum machine learning, and autonomous intelligent systems.
+}
+
+%==================== EDUCATION ====================
+
+\section{Education}
+
+\resumeEntry
+  {CHRIST (Deemed to be University)}{Aug 2024 -- May 2026}
+  {M.Sc.\ Artificial Intelligence and Machine Learning}{Bengaluru, India}
+
+\vspace{6pt}
+
+\resumeEntry
+  {Kannur University}{Jun 2021 -- Apr 2024}
+  {B.Sc.\ Computer Science -- First Class with Distinction (87.37\%)}{Kannur, Kerala}
+
+%==================== SKILLS ====================
+
+\section{Technical Skills}
+
+\small{
+\noindent\textbf{Programming Languages:} Python, Java, C/C++, SQL, JavaScript, TypeScript
+
+\vspace{4pt}
+\noindent\textbf{AI/ML Frameworks:} TensorFlow, PyTorch, Scikit-learn, Keras, Transformers, Hugging Face, LSTM, BERT, GPT, VADER
+
+\vspace{4pt}
+\noindent\textbf{Natural Language Processing (NLP):} Sentiment Analysis, Text Classification, Semantic Search, Embedding Models, Named Entity Recognition
+
+\vspace{4pt}
+\noindent\textbf{Generative AI and LLMs:} Retrieval-Augmented Generation (RAG), Prompt Engineering, LLM Application Development, Vector Databases
+
+\vspace{4pt}
+\noindent\textbf{Time-Series and Quantitative Analysis:} LSTM, TCN, ARIMA, Volatility Forecasting, Algorithmic Trading, Portfolio Optimisation, Backtesting, RSI, MACD, Bollinger Bands
+
+\vspace{4pt}
+\noindent\textbf{Backend and Web Development:} FastAPI, Django, React.js, Next.js, REST APIs, SQLAlchemy, Tailwind CSS
+
+\vspace{4pt}
+\noindent\textbf{Databases and Infrastructure:} PostgreSQL, TimescaleDB, MySQL, MongoDB, Redis, Docker, Git, Linux
+
+\vspace{4pt}
+\noindent\textbf{Data Analysis and Visualization:} NumPy, Pandas, Matplotlib, Power BI, Microsoft Excel
+}
+
+%==================== RESEARCH AND PUBLICATIONS ====================
+
+\section{Research and Publications}
+
+\resumeProject
+  {Real-Time Sentiment-Integrated LSTM Framework for Adaptive Trading Signal Generation}{2026}
+
+\resumeItemListStart
+  \resumeItem{
+    Peer-reviewed paper accepted at \textbf{ICICST 2026}; designed an end-to-end framework integrating financial news sentiment analysis with LSTM-based volatility forecasting for real-time stock market analysis.
+  }
+  \resumeItem{
+    Developed a two-layer LSTM model in PyTorch using rolling volatility, technical indicators (RSI, MACD), and VADER sentiment scores across 10 major US equities, achieving mean absolute error (MAE) between \textbf{0.023 and 0.072} (average MAE: \textbf{0.042}) -- outperforming baseline BERT-LSTM approaches.
+  }
+  \resumeItem{
+    Built a resilient multi-source data pipeline integrating Alpha Vantage, Financial Modeling Prep, NewsAPI, and RSS feeds for automated inference and analytics workflows.
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+\resumeProject
+  {Dynamic Financial Portfolio Optimisation using Temporal Convolutional Networks 
+  $|$ \href{https://www.researchgate.net/publication/394630875_Dynamic_Financial_Portfolio_Optimization_Using_Temporal_Convolutional_Networks_and_Real-Time_Data_Analysis}{ResearchGate} \hfill}{2025}
+
+\resumeItemListStart
+  \resumeItem{
+    Conducted research on portfolio optimisation using Temporal Convolutional Networks (TCN) for financial time-series forecasting and adaptive asset allocation across multi-asset portfolios.
+  }
+  \resumeItem{
+    Developed real-time data pipelines for automated portfolio rebalancing and risk-adjusted return optimisation; benchmarked TCN models against ARIMA and LSTM baselines, demonstrating improved temporal dependency modelling and lower forecasting error.
+  }
+\resumeItemListEnd
+
+%==================== PROJECTS ====================
+
+\section{Projects}
+
+\resumeProject
+  {FinHQ -- Financial Analytics Platform $|$ \href{https://github.com/Abhijith-E/FinHQ}{GitHub}}{Jan 2026 -- May 2026}
+
+\resumeItemListStart
+  \resumeItem{
+    Built a scalable full-stack financial analytics platform supporting ML-based stock forecasting, paper trading simulation, technical analysis, and financial education workflows for individual investors.
+  }
+  \resumeItem{
+    Designed a modular three-tier architecture using Next.js (frontend), FastAPI (backend), and PyTorch/TensorFlow (ML services) with REST API communication and Redis caching, reducing API response latency by over 40\%.
+  }
+  \resumeItem{
+    Implemented LSTM and Transformer-based stock price forecasting models with sentiment analysis integration and Value at Risk (VaR) computation for risk management dashboards.
+  }
+  \resumeItem{
+    Developed a paper trading and backtesting engine supporting RSI, MACD, Bollinger Bands, and Moving Average strategies, enabling users to simulate trades without real capital.
+  }
+  \resumeItem{
+    \textbf{Technologies:} FastAPI, Next.js, React.js, TypeScript, PyTorch, TensorFlow, PostgreSQL, TimescaleDB, Redis, Docker
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeProject
+  {Parkinson's Disease Detection from Gait Patterns $|$ \href{https://github.com/Abhijith-E/Parkinsons_Disease_Detection}{GitHub}}{Aug 2025 -- Nov 2025}
+
+\resumeItemListStart
+  \resumeItem{
+    Developed a machine learning framework for early Parkinson's disease detection using gait pattern and motion-sensor signal analysis, targeting clinical decision-support applications.
+  }
+  \resumeItem{
+    Engineered feature extraction pipelines from raw accelerometer data and evaluated multiple classification algorithms (SVM, Random Forest, Gradient Boosting) to identify optimal models for motor symptom classification.
+  }
+  \resumeItem{
+    Applied preprocessing, dimensionality reduction, and cross-validation techniques to improve classification accuracy on motion-based biomedical datasets.
+  }
+  \resumeItem{
+    \textbf{Technologies:} Python, Scikit-learn, Pandas, NumPy, Matplotlib
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeProject
+  {College Placement Management System $|$ \href{https://github.com/Abhijith-E/college-placement-management-system}{GitHub}}{Jan 2023 -- Apr 2023}
+
+\resumeItemListStart
+  \resumeItem{
+    Developed a web-based placement management platform supporting recruiter registration, student profile management, and end-to-end placement tracking workflows for a college with over 200 students.
+  }
+  \resumeItem{
+    Implemented secure role-based authentication (admin, recruiter, student) and responsive user interfaces for cross-device accessibility, reducing manual placement coordination effort by approximately 60\%.
+  }
+  \resumeItem{
+    \textbf{Technologies:} Django, Python, Bootstrap, SQLite, JavaScript
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeProject
+  {Scrap Handling and Pickup Management System $|$ \href{https://github.com/Abhijith-E/smart-scrap-management-system}{GitHub}}{Aug 2023 -- Nov 2023}
+
+\resumeItemListStart
+  \resumeItem{
+    Built a full-stack scrap pickup and workflow management system with scheduling, real-time tracking, and feedback functionalities to streamline logistics operations.
+  }
+  \resumeItem{
+    Designed role-based workflows for collectors, supervisors, and admins to improve operational coordination, accountability, and reporting accuracy.
+  }
+  \resumeItem{
+    \textbf{Technologies:} Django, Python, HTML5, CSS3, JavaScript, SQLite
+  }
+\resumeItemListEnd
+
+%==================== LEADERSHIP EXPERIENCE ====================
+
+\section{Leadership Experience}
+
+\resumeEntry
+  {Career Ambassador}{Jun 2023 -- May 2024}
+  {IHRD College of Applied Science}{Kerala, India}
+
+\resumeItemListStart
+  \resumeItem{
+    Mentored over 50 students on career development, technical interview preparation, skill-building roadmaps, and professional growth strategies across software and data-related roles.
+  }
+  \resumeItem{
+    Organised technical workshops and career-awareness programmes including mock interviews and resume review sessions, contributing to a measurable improvement in campus placement readiness.
+    \href{https://github.com/Abhijith-E/leadership-and-professional-credentials/blob/main/Career_Ambassador_Certificate.pdf}{[Credential]}
+  }
+\resumeItemListEnd
+
+%==================== CERTIFICATIONS ====================
+
+\section{Certifications}
+
+\resumeProject
+  {IBM AI Engineering Professional Certificate -- Coursera}{2025}
+
+\resumeItemListStart
+  \resumeItem{
+    Completed 6-course professional certification covering deep learning, computer vision, NLP, and AI model deployment using TensorFlow, Keras, and PyTorch. \href{https://www.coursera.org/account/accomplishments/professional-cert/VB5L09HRGVN4}{[Credential]}
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeProject
+  {IBM Generative AI Engineering Professional Certificate -- Coursera}{2025}
+
+\resumeItemListStart
+  \resumeItem{
+    Completed certification in Generative AI, covering LLM fine-tuning, RAG pipelines, prompt engineering, and production-ready LLM application development. \href{https://www.coursera.org/account/accomplishments/professional-cert/W9RRBKQ7I5YZ}{[Credential]}
+  }
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeProject
+  {IBM AI Developer Professional Certificate -- Coursera}{2025}
+
+\resumeItemListStart
+  \resumeItem{
+    Completed certification focused on AI application development including API integration, Watson AI services, and deploying AI-powered applications to production environments. \href{https://www.coursera.org/account/accomplishments/professional-cert/9Z5UYZMG8HPX}{[Credential]}
+  }
+\resumeItemListEnd
+
+%=========================================================
+\end{document}
